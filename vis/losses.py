@@ -74,7 +74,7 @@ class ActivationMaximization(Loss):
 
     def build_loss(self):
         layer_output = self.layer.output
-
+        print(layer_output.shape)
         # For all other layers it is 4
         is_dense = K.ndim(layer_output) == 2
 
